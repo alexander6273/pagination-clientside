@@ -1,7 +1,7 @@
 import "https://unpkg.com/navigo";
 import { adjustForMissingHash, loadHtml, renderTemplate, setActiveLink } from "./utils.js";
 
-import { initCars } from "./pages/cars/cars.js";
+import { initCars, load } from "./pages/cars/cars.js";
 
 window.addEventListener("load", async () => {
     const templateCars = await loadHtml("./pages/cars/cars.html");
@@ -24,9 +24,10 @@ window.addEventListener("load", async () => {
             "/": () => {
                 renderTemplate(templateHome, "content");
             },
-            "/cars": () => {
+            "/cars": (match) => {
                 renderTemplate(templateCars, "content");
-                initCars();
+                load(1, match);
+                // initCars();
             },
         })
         .notFound(() => {
