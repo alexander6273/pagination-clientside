@@ -1,0 +1,37 @@
+<div class="template">
+    <h1>Find delivery</h1>
+    <div class="row">
+        <div class="col-md-2">
+          <input id="deli-id-input"/>
+        </div>
+        <div class="col-md-2">
+            <button class="btn" id="btn-fetch-deli">Get delivery</button>
+        </div>
+      </div>
+      <div>
+        <form id="form" style="max-width: 800px;">
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="price">Total pris</label>
+                    <input id="price">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="weight">Total vægt</label>
+                    <input id="weight">
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <table class="table">
+        <thead>
+            <th id="name-header">Produkt navn</th>
+            <th id="amount-header">Antal</th>
+            <th id="price-header">Pris</th>
+            <th id="weight-header">Vægt</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+</div>

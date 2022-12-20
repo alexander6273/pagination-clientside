@@ -1,4 +1,29 @@
 /* for general styling */
 .navbar-nav .nav-link.active {
-    background-color: red;
+    background-color: rgb(255, 196, 0);
+}
+
+.row{
+    margin-top: 1.5em;
+    vertical-align: middle;
+    /* text-align: right; */
+}
+
+.label{
+  margin-top: 1.5em;
+    vertical-align: middle;
+    text-align: right;
+}
+  
+.input {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 4px;
+  width:100%;
+  border: 1px solid rgb(197, 193, 193);
+}
+
+#content{
+  margin: 5%;
+  margin-top: 3%;
 }

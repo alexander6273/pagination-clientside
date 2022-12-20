@@ -1,1 +1,1 @@
-// for often used URL's etc.
+export const localhostURL = "http://localhost:8080/api/"
